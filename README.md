@@ -2,6 +2,12 @@
 
 Trace viewer example applications and building blocks that can be used in or with them. Each application integrates either the [Eclipse Theia trace viewer extension](https://www.npmjs.com/package/theia-traceviewer) (npmjs.com) or the [Trace Viewer extension for VSCode](https://open-vsx.org/extension/eclipse-cdt/vscode-trace-extension) (open-vsx.org).
 
+---
+
+💡  _Are you looking for a way to quickly try a "batteries included" trace viewer example application, where everything is setup for you and ready-to-go?_
+
+- ⏩ Build and run one of our [Docker "demo" images](docker/theia-app-demo/README.md#build-the-demo-images)
+
 ## Requirements
 
 ### General Requirements
