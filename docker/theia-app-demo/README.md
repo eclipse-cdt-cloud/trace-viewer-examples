@@ -1,10 +1,10 @@
 # Resources for the "theia-app-demo" Example docker image
 
-This folder contains the resources, needed to create a "demo" Docker image, based on one of the Theia app images. The demo image includes the necessary extras to easily perform a quick demo or immediately play with the trace viewer: the Eclipse Trace Compass Trace Server and a selection of Tutorial traces.
+This folder contains the resources, needed to create "demo" Docker images, based on the Theia app images. A demo image includes the necessary extras to easily perform a quick demo or immediately play with the trace viewer: the Eclipse Trace Compass Trace Server and a selection of Tutorial traces.
+
+After connecting to one of the demo appliances with a browser, the trace viewer application should open with the trace server running and a workspace open, containing the tutorial traces, ready to use.
 
 ## Build the demo images
-
-After connecting to either the tate or tave application using a browser, following the instructions below, the app should open with the trace server running and the workspace already selected, containing the tutorial traces, ready to use.
 
 Run the following commands from the parent folder (\<repo root\>/docker):
 
