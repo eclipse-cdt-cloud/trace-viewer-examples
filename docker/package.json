@@ -2,11 +2,8 @@
   "private": true,
   "name": "docker-examples",
   "version": "0.1.0",
-  "dependencies": {
-
-  },
-  "devDependencies": {
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "prepare": "yarn tave",
     "build": "yarn tate build && yarn tave build",
@@ -26,13 +23,11 @@
     "download:server": "curl -o trace-compass-server.tar.gz https://download.eclipse.org/tracecompass.incubator/trace-server/rcp/trace-compass-server-latest-linux.gtk.x86_64.tar.gz; tar -xf trace-compass-server.tar.gz; rm trace-compass-server.tar.gz",
     "start:server": "./trace-compass-server/tracecompass-server"
   },
-  "engines": {
-  },
+  "engines": {},
   "resolutions": {
-    "msgpackr": "^1.10.1",
-    "**/nan": "2.18.0"
+    "inversify": "6.0.2"
   },
-  "workspaces":[
+  "workspaces": [
     "theia-app-theia-ext",
     "theia-app-vscode-ext"
   ]

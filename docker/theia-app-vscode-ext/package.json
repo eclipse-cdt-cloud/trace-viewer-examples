@@ -18,14 +18,14 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.10.14",
-    "@theia/core": "1.49.1",
-    "@theia/messages": "1.49.1",
-    "@theia/navigator": "1.49.1",
-    "@theia/preferences": "1.49.1",
-    "@theia/plugin-ext-vscode": "1.49.1"
+    "@theia/core": "1.52.0",
+    "@theia/messages": "1.52.0",
+    "@theia/navigator": "1.52.0",
+    "@theia/preferences": "1.52.0",
+    "@theia/plugin-ext-vscode": "1.52.0"
   },
   "devDependencies": {
-    "@theia/cli": "1.49.1"
+    "@theia/cli": "1.52.0"
   },
   "scripts": {
     "prepare": "yarn download:plugins",
@@ -39,10 +39,13 @@
   },
   "engines": {
     "yarn": ">=1.7.0 <2",
-    "node": ">=16 <19"
+    "node": ">=18 <21"
   },
   "theiaPluginsDir": "plugins",
   "theiaPlugins": {
-      "vscode-trace-extension": "https://open-vsx.org/api/eclipse-cdt/vscode-trace-extension/0.2.9/file/eclipse-cdt.vscode-trace-extension-0.2.9.vsix"
+      "vscode-trace-extension": "https://open-vsx.org/api/eclipse-cdt/vscode-trace-extension/0.4.0/file/eclipse-cdt.vscode-trace-extension-0.4.0.vsix"
+  },
+  "resolutions": {
+    
   }
 }
