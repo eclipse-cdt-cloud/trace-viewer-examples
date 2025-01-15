@@ -17,7 +17,7 @@ COPY ${RESOURCES}/webpack.config.js /app/tv/
 COPY yarn.lock  /app/tv/
 WORKDIR /app/tv/
 RUN yarn && \
-    yarn build:prod && \
+    yarn build && \
     yarn autoclean --init && \
     echo *.ts >> .yarnclean && \
     echo *.ts.map >> .yarnclean && \
