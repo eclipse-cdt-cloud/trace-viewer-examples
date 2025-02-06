@@ -21,7 +21,7 @@ jobs:
           - name: "tave"
             resources-folder: "theia-app-vscode-ext"
         os: [ubuntu-latest]
-        node-version: [18]
+        node-version: [20]
 
     steps:
     - uses: actions/checkout@v4

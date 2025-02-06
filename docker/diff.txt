@@ -1,0 +1,59 @@
+diff --git a/.github/workflows/docker-example.yml b/.github/workflows/docker-example.yml
+index 94fa5b6..c519e15 100644
+--- a/.github/workflows/docker-example.yml
++++ b/.github/workflows/docker-example.yml
+@@ -21,7 +21,7 @@ jobs:
+           - name: "tave"
+             resources-folder: "theia-app-vscode-ext"
+         os: [ubuntu-latest]
+-        node-version: [18]
++        node-version: [20]
+ 
+     steps:
+     - uses: actions/checkout@v4
+diff --git a/docker/Dockerfile-tate b/docker/Dockerfile-tate
+index 01996da..b31661e 100644
+--- a/docker/Dockerfile-tate
++++ b/docker/Dockerfile-tate
+@@ -1,4 +1,4 @@
+-FROM node:18.20.4-bookworm-slim AS build
++FROM node:20.18.2-bookworm-slim AS build
+ ARG RESOURCES
+ 
+ RUN apt-get update && apt-get install -y \
+diff --git a/docker/Dockerfile-tave b/docker/Dockerfile-tave
+index c362b2b..88567e2 100644
+--- a/docker/Dockerfile-tave
++++ b/docker/Dockerfile-tave
+@@ -1,4 +1,4 @@
+-FROM node:18.20.4-bookworm-slim AS build
++FROM node:20.18.2-bookworm-slim AS build
+ ARG RESOURCES
+ 
+ RUN apt-get update && apt-get install -y \
+diff --git a/docker/theia-app-theia-ext/package.json b/docker/theia-app-theia-ext/package.json
+index b0aba80..ab7a1a5 100644
+--- a/docker/theia-app-theia-ext/package.json
++++ b/docker/theia-app-theia-ext/package.json
+@@ -37,7 +37,7 @@
+   },
+   "engines": {
+     "yarn": ">=1.7.0 <2",
+-    "node": ">=18 <21"
++    "node": ">=18 <23"
+   },
+   "resolutions": {
+     
+diff --git a/docker/theia-app-vscode-ext/package.json b/docker/theia-app-vscode-ext/package.json
+index 48aeaf4..26b2de2 100644
+--- a/docker/theia-app-vscode-ext/package.json
++++ b/docker/theia-app-vscode-ext/package.json
+@@ -39,7 +39,7 @@
+   },
+   "engines": {
+     "yarn": ">=1.7.0 <2",
+-    "node": ">=18 <21"
++    "node": ">=18 <23"
+   },
+   "theiaPluginsDir": "plugins",
+   "theiaPlugins": {
